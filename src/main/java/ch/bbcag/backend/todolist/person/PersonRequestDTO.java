@@ -2,9 +2,22 @@ package ch.bbcag.backend.todolist.person;
 
 import jakarta.validation.constraints.NotBlank;
 
+import java.util.ArrayList;
 import java.util.Objects;
+import java.util.List;
 
 public class PersonRequestDTO {
+
+    private List<Integer> itemIds = new ArrayList<>();
+
+    public List<Integer> getItemIds() {
+        return itemIds;
+    }
+
+    public void setItemIds(List<Integer> itemIds) {
+        this.itemIds = itemIds;
+    }
+
     @NotBlank(message = "must not be blank")
     private String username;
 

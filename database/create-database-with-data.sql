@@ -2,7 +2,7 @@
 DROP USER IF EXISTS 'db_todo_list'@'localhost';
 
 -- Erstelle den Benutzer für '%' erneut, falls er nicht mehr existiert
-CREATE USER 'db_todo_list'@'%' IDENTIFIED BY 'Alex2007';
+CREATE USER 'db_todo_list'@'%' IDENTIFIED BY 'Al2007ex!?';
 
 -- Stelle sicher, dass der Benutzer für '%' Zugriff auf die Datenbank hat
 GRANT ALL PRIVILEGES ON db_todo_list.* TO 'db_todo_list'@'%';
